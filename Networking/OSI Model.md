@@ -3,6 +3,16 @@ The OSI (Open Systems Interconnection) model is a conceptual model that describe
 
 ![367](../attachments/Pasted%20image%2020260412223916.png)
 
+|Layer Number|Layer Name|Main Function|Example Protocols and Standards|
+|---|---|---|---|
+|Layer 7|Application layer|Providing services and interfaces to applications|HTTP, FTP, DNS, POP3, SMTP, IMAP|
+|Layer 6|Presentation layer|Data encoding, encryption, and compression|Unicode, MIME, JPEG, PNG, MPEG|
+|Layer 5|Session layer|Establishing, maintaining, and synchronising sessions|NFS, RPC|
+|Layer 4|Transport layer|End-to-end communication and data segmentation|UDP, TCP|
+|Layer 3|Network layer|Logical addressing and routing between networks|IP, ICMP, IPSec|
+|Layer 2|Data link layer|Reliable data transfer between adjacent nodes|Ethernet (802.3), WiFi (802.11)|
+|Layer 1|Physical layer|Physical data transmission media|Electrical, optical, and wireless signals|
+
 #### Layer 1: Physical Layer
 
 The physical layer, also referred to as layer 1, deals with the physical connection between devices.
@@ -32,3 +42,8 @@ Examples of the session layer are Network File System (NFS) and Remote Procedu
 
 The presentation layer ensures the data is delivered in a form the application layer can understand. Layer 6 handles data encoding, compression, and encryption. An example of encoding is character encoding, such as ASCII or Unicode.
 
+#### Layer 7: Application Layer
+
+The application layer provides network services directly to end-user applications.
+
+Examples of Layer 7 protocols are HTTP, FTP, DNS, POP3, SMTP, and IMAP.
