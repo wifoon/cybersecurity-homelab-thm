@@ -15,3 +15,8 @@ The data link layer, layer 2, represents the protocol that enables data transfer
 
 The network layer, layer 3, is concerned with sending data between different networks. It handles logical addressing and routing, i.e., finding a path to transfer the network packets between the diverse networks.
 
+#### Layer 4: Transport Layer
+
+Layer 4, the transport layer, enables end-to-end communication between running applications on different hosts. Web browser is connected to the TryHackMe web server over the transport layer, which can support various functions like flow control, segmentation, and error correction.
+
+Examples of layer 4 are Transmission Control Protocol (TCP) and User Datagram Protocol (UDP).
