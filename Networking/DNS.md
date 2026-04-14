@@ -17,3 +17,5 @@ These records resolve to another domain name.
 **MX Record**
 These records resolve to the address of the servers that handle the email for the domain you are querying.
 
+**TXT Record**
+TXT records are free text fields where any text-based data can be stored.
