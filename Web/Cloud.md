@@ -5,3 +5,8 @@
 `Google App Engine, AWS Elastic Beanstalk, Microsoft Azure App Service`
 
 **SaaS (Software as a Service)** Delivers fully managed, ready-to-use software applications over the internet, usually via subscription.
+`Gmail, Zoom`
+
+### AWS
+
+**EC2 (Virtual Computer / Server):** EC2 represents a virtual computer in the cloud. It has a CPU and RAM and can run applications. Whenever you add an EC2 **instance**, you are adding a computer to your environment.
