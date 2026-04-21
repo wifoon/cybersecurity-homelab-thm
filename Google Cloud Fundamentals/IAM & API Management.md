@@ -1,21 +1,18 @@
 
-Quick reference note on navigating the Google Cloud Console, managing Identity and Access Management (IAM), and handling Cloud APIs. Based on the Google Cloud Computing Foundations series.
+Navigating the Google Cloud Console, managing Identity and Access Management (IAM), and handling Cloud APIs. Based on the Google Cloud Computing Foundations series.
+
+![](../attachments/Pasted%20image%2020260421165922.png)
 
 ---
-
-### Project Identification
 In Google Cloud, every resource must belong to a **Project**. Projects are isolated from each other and identified by:
-
 * **Project Name**: A user-friendly name (can be changed).
 * **Project ID**: A globally unique identifier (cannot be changed).
 * **Project Number**: An automatically assigned unique number.
 
-In a lab environment, we often see a **Qwiklabs Resources** project, which is a shared, read-only repository for datasets and machine images.
-
 ---
+### IAM (Identity & Access Management)
 
-### Cloud IAM (Identity & Access Management)
-IAM defines **Who** (Principal) has **What** (Role) on **Which** resource. Roles are collections of permissions.
+IAM roles defines **Who** has **What** permissions on **Which** resource.
 
 **Basic Roles (Primitive):**
 
@@ -28,17 +25,16 @@ IAM defines **Who** (Principal) has **What** (Role) on **Which** resource. Roles
 To grant access via Console:
 `Navigation Menu` -> `IAM & Admin` -> `IAM` -> `Grant Access`.
 
+![](../attachments/Pasted%20image%2020260421170333.png)
 ---
-
 ### APIs & Services
+
 Most Google Cloud features are exposed via **APIs**. By default, many APIs are disabled to minimize security risks and costs.
 
-**Example: Enabling Dialogflow API**
+**Enabling Dialogflow API**
 The Dialogflow API allows building conversational interfaces (chatbots) using machine learning.
 
-1.  Go to `APIs & Services` -> `Library`.
-2.  Search for **"Dialogflow API"**.
-3.  Click **Enable**.
+`APIs & Services` -> `Library`.
 
 To verify or enable via **Cloud Shell (gcloud CLI)**:
 ```bash
