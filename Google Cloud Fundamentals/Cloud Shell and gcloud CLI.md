@@ -29,7 +29,8 @@ gcloud config get-value compute/zone
 
 
 **Environment Variables**:
-Przechowywanie ID projektu i strefy w zmiennych powłoki dla automatyzacji skryptów.
+we can store project ID and zone in env variables to automate scripts and commands.
+
 ```bash
 export PROJECT_ID=$(gcloud config get-value project)
 export ZONE=$(gcloud config get-value compute/zone)
@@ -39,19 +40,35 @@ echo -e "PROJECT_ID: $PROJECT_ID\nZONE: $ZONE"
 ---
 
 ### Compute Instances
-Zarządzanie instancjami maszyn wirtualnych (VM).
+Management of Virtual Machine (VM) instances.
 
-**Create VM**:
-Tworzenie instancji o określonym typie maszyny i strefie.
+**Create instance VM**:
+
 ```bash
 gcloud compute instances create gcelab2 --machine-type e2-medium --zone $ZONE
 ```
 
-**SSH Connection**:
-Zautomatyzowane połączenie SSH z generowaniem kluczy.
+- `gcloud compute` allows you to manage your Compute Engine resources in a format that's simpler than the Compute Engine API.
+- `instances create` creates a new instance.
+- `gcelab2` is the name of the VM.
+- The `--machine-type` flag specifies the machine type as _e2-medium_.
+- The `--zone` flag specifies where the VM is created.
+
+List the compute instance available in the project:
+
 ```bash
-gcloud compute ssh gcelab2 --zone $ZONE  # Połączenie i autoryzacja [cite: 38, 42]
-# Przykład po zalogowaniu:
+gcloud compute instances list
+```
+
+**SSH Connection**:
+
+Connecting to VM with SSH:
+
+```bash
+# Connection and authorization
+gcloud compute ssh gcelab2 --zone $ZONE 
+
+# Instaling a web server after connecting
 sudo apt update && sudo apt install -y nginx
 ```
 
